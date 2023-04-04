@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pit Checklist</title>
+	<style>
+		body {
+			background-color: black;
+			color: white;
+			font-family: 'Arial Black', sans-serif;
+			text-align: center;
+		}
+
+		h1 {
+			margin-top: 25px;
+			border: 3px solid white;
+			padding: 10px;
+		}
+
+		h2 {
+			margin-top: 25px;
+			border: 3px solid white;
+			padding: 10px;
+		}
+
+		label {
+			display: block;
+			margin: 15px 0;
+			font-size: 20px;
+		}
+
+		input[type="checkbox"] {
+			transform: scale(2);
+			margin-right: 10px;
+		}
+
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			margin: 25px 0;
+		}
+
+		.column {
+			width: 300px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Pit Checklist</h1>
+	<div class="container">
+		<div class="column">
+			<form>
+				<label>
+					<input type="checkbox" name="zero-arm">
+					<span>Zero Arm</span>
+				</label>
+				<label>
+					<input type="checkbox" name="zero-wrist">
+					<span>Zero Wrist</span>
+				</label>
+				<label>
+					<input type="checkbox" name="zero-drive">
+					<span>Zero Drive</span>
+				</label>
+				<label>
+					<input type="checkbox" name="zero-gyro">
+					<span>Zero Gyro</span>
+				</label>
+			</form>
+		</div>
+		<div class="column">
+			<form>
+                <label>
+					<input type="checkbox" name="systems-check">
+					<span>Systems Check</span>
+				</label>
+                <label>
+					<input type="checkbox" name="check-connections">
+					<span>Check Connections</span>
+				</label>
+                <label>
+					<input type="checkbox" name="air-up">
+					<span>Air Up</span>
+				</label>
+                <label>
+					<input type="checkbox" name="low-gear">
+					<span>Low Gear</span>
+				</label>
+                <label>
+					<input type="checkbox" name="check-battery">
+					<span>Check Battery</span>
+				</label>
+			</form>
+		</div>
+	</div>
+	<h2>Pre Match</h2>
+	<div class="container">
+		<div class="column">
+			<form>
+				<label>
+					<input type="checkbox" name="reset-arm">
+					<span>Reset Arm</span>
+				</label>
+				<label>
+					<input type="checkbox" name="reset-wrist">
+					<span>Reset Wrist</span>
+				</label>
+				<label>
+					<input type="checkbox" name="reset-drive">
+					<span>Reset Drive</span>
+				</label>
+				<label>
+					<input type="checkbox" name="reset-gyro">
+					<span>Reset Gyro</span>
+				</label>
+			</form>
+		</div>
+		<div class="column">
+			<form>
+				<label>
+					<input type="checkbox" name="auto-and-starting">
+					<span>Correct Auto + Position</span>
+				</label>
+                <label>
+					<input type="checkbox" name="pull-pins">
+					<span>Pull Pins</span>
+				</label>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
